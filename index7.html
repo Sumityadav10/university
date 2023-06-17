@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="navbar">
+
+            <a href="index3.html">Admissions</a>
+            <a href="index2.html">Campus Tour</a>
+            <a href="index4.html"> Stats</a>
+            <a href="index5.html">Know More</a>
+            <div class="logo">
+              <a href="index.html"
+                ><img height="63px" width="70px" style="background-color: white;"
+                src="https://cdn-icons-png.flaticon.com/512/5/5109.png"
+                alt="na"
+            /></a>
+            </div>
+            <a href="#">Placements</a>
+            <a href="#">News & Events</a>
+            <a href="index6.html">Reviews</a>
+            <a href="index7.html">Research Papers</a>
+          </div>
+
+        <div class="research">
+
+        <div class="researcherInfo ">
+            <h1 class="query"><b>Submit Your Research Papers Here: </b> </h1>
+            <div class="researchBoxes">
+            <input type="text" class="researcherName containerBox" placeholder="Enter Researcher's Name ">
+            <input type="url" class="papers containerBox" placeholder="Paste Link Of Research Papers">
+        </div>
+            <button type="button" class="paperSubmit"><B>SUBMIT PAPERS</B></button>
+
+        </div>
+
+        <table class="researchers">
+            <THead>
+
+
+                <tr>
+                    <td><B>INDEX</B></td>
+                    <td><B>RESEARCH SCHOLAR</B></td>
+                    <td><B>RESEARCH PAPER</B></td>
+                </tr>
+
+            </THead>
+           
+        
+            <tbody id="tableBody"></tbody>
+
+        </table>
+    </div>
+
+    <div class="icons">
+        <div class="connect"><h1>Connect Us At:</h1></div>
+
+        <div class="icon-container">
+            <a href="https://www.facebook.com/AshokaUniversity" class="icon" id="facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com/AshokaUniv" class="icon" id="twitter">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="https://www.instagram.com/ashokauniv/" class="icon" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/user/AshokaUniversity" class="icon" id="whatsapp">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+            <a href="#" class="icon" id="telegram">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+    
+     </div>
+
+    </div>
+
+    <script src="script7.js"></script>
+      <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        var nameValue = $(".researcherName").val();
+        var linkValue = $(".papers").val();
+        var rowIndex = 0;
+       
+        $('.paperSubmit').on('click', function () {
+
+            nameValue = $(".researcherName").val();
+         linkValue = $(".papers").val();
+  
+  // Adding a row inside the tbody.
+  $('#tableBody').append(`<tr id="R${++rowIndex}">
+       <td>  <p>${rowIndex}</p> </td>
+        <td> ${nameValue} </td>
+        <td>${linkValue}</td>
+        </tr>`);
+    });
+    </script>
+</body>
+</html>

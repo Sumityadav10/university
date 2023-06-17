@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="navbar">
+        <a href="index3.html">Admissions</a>
+        <a href="index2.html">Campus Tour</a>
+        <a href="index4.html"> Stats</a>
+        <a href="index5.html">Know More</a>
+        <div class="logo">
+          <a href="index.html"
+            ><img height="63px" width="70px" style="background-color: white;"
+            src="https://cdn-icons-png.flaticon.com/512/5/5109.png"
+            alt="na"
+        /></a>
+        </div>
+        <a href="#">Placements</a>
+        <a href="#">News & Events</a>
+        <a href="index6.html">Reviews</a>
+        <a href="index7.html">Research Papers</a>
+      </div>
+
+      <div class="admission">
+        <div class="query">
+          <h1><i>Admission Query 2023</i></h1>
+        </div>
+
+        <form class="form" action="">
+          <h1>register to ask query</h1>
+          <div class="card-details">
+            <div class="form1">
+              <div class="formbox">
+                <label class="detail" for="yourname"
+                  ><strong>Name</strong></label
+                >
+                <input
+                  type="text"
+                  id="yourname"
+                  placeholder="Enter Your Name"
+                />
+              </div>
+
+              <div class="formbox">
+                <label class="detail" for="yourmail"
+                  ><strong>Email</strong></label
+                >
+                <input
+                  type="email"
+                  id="yourmail"
+                  placeholder="Enter Your Email"
+                />
+              </div>
+            </div>
+
+            <div class="form1">
+              <div class="formbox">
+                <label class="detail" for="yournum"
+                  ><strong>Contact Number</strong></label
+                >
+                <input
+                  type="number"
+                  id="yournum"
+                  placeholder="Enter Contact Number"
+                />
+              </div>
+
+              <div class="formbox">
+                <label class="detail" for="yourgen"
+                  ><strong>Gender</strong></label
+                >
+                <select id="yourgen" name="genders">
+                  <option value="Male">Male</option>
+                  <option value="Female">Female</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form1">
+              <div class="formbox">
+                <label class="detail" for="DOB"
+                  ><strong>Date Of Birth</strong></label
+                >
+                <input type="date" id="DOB" />
+              </div>
+            </div>
+
+            <div class="form1">
+              <div class="formsubmit">
+                <div class="formbox">
+                  <label class="detail" for="formSubmit"
+                    ><strong>Click here to submit</strong></label
+                  >
+                  <input
+                    id="formSubmit"
+                    type="button"
+                    onclick="proceed()"
+                    value="Submit"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="credentials">
+          <div class="cred-heading">
+            <div>
+              <h1>Student Credentials:</h1>
+            </div>
+            <div>
+              <i id="cross" class="fa-solid fa-xmark close"></i>
+            </div>
+          </div>
+
+          <div class="nameclass items">
+            <div class="part1">Name</div>
+            <div id="namepart" class="part2"></div>
+          </div>
+
+          <div class="mailclass items">
+            <div class="part1">Mails</div>
+            <div id="mailpart" class="part2"></div>
+          </div>
+
+          <div class="numberclass items">
+            <div class="part1">Phone No.</div>
+            <div id="numberpart" class="part2"></div>
+          </div>
+
+          <div class="dobclass items">
+            <div class="part1">Date Of Birth</div>
+            <div id="dobpart" class="part2"></div>
+          </div>
+
+          <div class="askQuery"><b>Ask Query</b></div>
+        </div>
+
+        <div class="queryForm">
+          <div class="query-heading">
+            <div>
+              <h1>Query Form:</h1>
+            </div>
+            <div>
+              <i id="crossQuery" class="fa-solid fa-xmark close"></i>
+            </div>
+          </div>
+
+          <textarea
+            name="queryText"
+            id="queryText"
+            cols="60"
+            rows="12"
+            placeholder="write your query here..."
+          ></textarea>
+
+          <div class="querySubmit"><b>Submit Query</b></div>
+        </div>
+      </div>
+
+      <div class="icons">
+        <div class="connect"><h1>Connect Us At:</h1></div>
+
+        <div class="icon-container">
+          <a
+            href="https://www.facebook.com/AshokaUniversity"
+            class="icon"
+            id="facebook"
+          >
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/AshokaUniv" class="icon" id="twitter">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/ashokauniv/"
+            class="icon"
+            id="instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/user/AshokaUniversity"
+            class="icon"
+            id="whatsapp"
+          >
+            <i class="fa-brands fa-youtube"></i>
+          </a>
+          <a href="#" class="icon" id="telegram">
+            <i class="fa-brands fa-telegram"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script3.js"></script>
+  </body>
+</html>
+
+
